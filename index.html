@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="Pomodoro" content="A pomodoro clock made with javascript">
+        <meta name="viewport" content="width=device-width, initial-scale=1">        
+        <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header>
+            <h1 class="head">Pomodoro Clock</h1>
+
+            <link rel="stylesheet" href="style.css">
+        </header>
+        <div id="options">
+            <input type="button" value="START" id="start" class="start-reset"> 
+            <!--<input type="button" value="PAUSE" id="pause" disabled> -->
+            <input type="button" value="RESET" id="reset" disabled class="start-reset">
+        </div>
+        <div id="timers">
+            <div id="session">
+                <input type="button" value="-" class="volume decrement">
+                <h2 id="session-timer" class="timer">25</h2>
+                <input type="button" value="+" class="volume increment">
+            </div>
+            <h1 class="head">Break</h1>
+            <div id="break">
+                    <input type="button" value="-" class="volume b-decrement">
+                    <h2 id="break-timer" class="timer">5</h2>
+                    <input class="volume b-increment" type="button" value="+">
+            </div>
+        </div>
+        <footer>
+            <p>Made by <em><a href="https://lilnop.github.io/lilnop/" target="_blank">Robert Sarpong</a></em></p>
+        </footer>
+        
+        <audio src="sounds/Time Up.mp3" id="time-up" type="audio/mpeg"></audio>
+        <script src="js.js" type=""></script>
+    </body>
+</html>
